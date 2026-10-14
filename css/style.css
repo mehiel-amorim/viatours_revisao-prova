@@ -1,0 +1,304 @@
+/* === IMPORTAÇÃO DE FONTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fredoka:wght@300..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+/*
+Fontes Disponíveis:
+// Sugiro usar esta 
+font-family: "Urbanist", sans-serif; 
+font-family: "Fredoka", sans-serif;
+font-family: "Epilogue", sans-serif;
+font-family: "Nunito", sans-serif;
+font-family: "Oswald", sans-serif;
+*/
+/* ==========================*/
+
+/* ==== FORMATAÇÃO GERAL === */
+html{
+    font-size: clamp(1rem, 1vw + 0.8rem, 3rem); 
+    font-family: "Urbanist", sans-serif; 
+}
+
+/* ==== Header === */
+header{
+    text-align: center;
+    padding: 4vw;
+    background-color: #FEF8F5;
+
+    nav{
+        padding: 20px;
+
+        ul{
+            li{
+                padding: 5px ;
+                font-size: 0.9rem;
+
+                a{
+                    padding: 5px;
+                }
+                a:hover{
+                    color: #ED672B;
+                }
+            }
+            
+            .button{
+                padding: 20px;
+            }
+            .button-nav{
+                background-color: #ED672B;
+                
+                padding: 12px 24px;
+                color: #FEF8F5 ;
+                border-radius: 40px;
+            }
+            .button-nav:hover{
+                background-color: #f07c46;
+                color: #FEF8F5;
+            }
+        }
+    }
+}
+
+/* ==== banner === */
+section#banner{
+    padding: 0 2vw 15vw 2vw;
+    background: url(../imagens/imagem-banner.png) no-repeat center bottom, #FEF8F5;
+    background-size: 60% auto;
+    text-align: center;
+
+    h1{
+        display: flex;
+        justify-content: center;
+        padding: 0 20vw 10vw 20vw;
+        
+        
+        
+        font-size: 2rem;
+        color: #f37c44;
+        font-weight: 600;
+        
+    }
+    
+}
+
+/* ==== activies === */
+section#activities{
+    padding: 4vw;
+    text-align: center;
+    h2{
+        font-weight: 500;
+        font-size: 1.4rem;
+        padding: 2vw;
+    }
+    ul{
+        padding: 1vw;
+
+        li{
+            padding: 20px 6vw;
+
+            h3{
+                padding: 30px 0 15px 0;
+                font-weight: 500;
+            }
+            p{
+                font-size: 0.9rem;
+                padding: 0 3vw;
+            }
+        }
+    }
+}
+/* ==== pages === */
+section#pages{
+    background-color: rgba(243, 243, 243, 0.986);
+    padding: 8vw 4vw;
+    text-align: center;
+
+    h2{
+        font-size: 1.7rem;
+        font-weight: 700;
+        padding: 5px 0 60px 0;
+    }
+    p{
+        font-size: 0.9rem;
+        padding: 60px 20px 15px 20px;
+    }
+}
+/* ==== cotacl === */
+section#contact{
+    padding: 4vw 4vw 0 4vw;
+    text-align: center;
+    background-color: #ED672B;
+    h2{
+        color: #FEF8F5;
+        font-weight: 700;
+        font-size: 1.8rem;
+        padding: 10px 20px 10px 20px;
+    }
+    p{
+        font-size: 0.9rem;
+        color: #FEF8F5 ;
+        padding: 10px 40px 50px 40px;
+    }
+    a{
+                background-color: #FEF8F5;
+                
+                padding: 12px 24px;
+                color: #ED672B ;
+                border-radius: 40px;
+    }
+    a:hover{
+        background-color: #d3d3d3;
+    }
+}
+/* ==== footter === */
+footer{
+    padding: 6vw 4vw;
+    background-color: #05073C;
+    color: #FEF8F5;
+    
+    h2{
+        font-weight: 600;
+        padding: 0 0 30px 0;
+    }
+    p{
+        font-size: 0.9rem;
+        padding: 10px 0 20px;
+        max-width: 400px;
+        margin: 2px 4px;
+    }
+
+    h3{
+        font-weight: 600;
+        padding: 0 0 15px 0;
+    }
+    ul{
+        li{
+            font-size: 0.9rem;
+            padding: 10px 0 5px 0;
+            margin: 2px 4px;
+
+            a:hover{
+                color: #d3d3d3;
+            }
+        }
+    }
+}
+
+/* MEDIA QUERY - DESKTOP */
+@media  screen and (min-width: 600px) {
+
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2vw 6vw 1vw 9vw;
+    
+
+        nav{
+            ul{
+                display: flex;
+                align-items: center;
+
+                li{
+                    a{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
+    }
+    section#banner{
+    padding: 0 2vw 24vw 2vw;
+    background: url(../imagens/imagem-banner.png) no-repeat center bottom, #FEF8F5;
+    background-size: auto 25vw;
+    text-align: center;
+
+    h1{
+        padding: 5vw 0 0 0;
+        max-width: 900px;
+        margin: 0 auto;
+        font-size: 3rem;
+    }
+    }
+
+    section#activities{
+        padding: 5vw 10vw;
+        text-align: left;
+        h2{
+            font-weight: 700;
+            padding: 2vw 1vw;
+        }
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 200px;
+            li{
+                padding: 0;
+                width: 33%;
+
+                p{
+                    padding: 0 ;
+                    max-width: 350px;
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    section#pages{
+        padding: 5vw;
+        h2{
+            padding: 3vw 0 5vw;
+        }
+        p{
+            padding: 5vw 0 5vw;
+            max-width: 1200px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+    }
+    section#contact{
+        display: flex;
+        text-align: left;
+        gap: 40px;
+        
+
+        h2{
+            max-width: 600px;
+            padding: 4vw 0vw 0 8vw;
+        }
+        p{
+            max-width: 800px;
+            padding: 20px 0vw 3vw 8vw;
+            line-height: 1.7;
+        }
+        a{
+            margin: 8vw;
+        }
+        img{
+            width: 900px;
+            height: auto;
+        }
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6vw 14vw 8vw 12vw;
+
+        p{
+            font-size: 0.7rem;
+        }
+        ul{
+            li{
+                a{
+                    font-size: 0.7rem;
+                }
+                a:hover{
+                    color: #d3d3d3;
+                }
+            }
+        }
+    }
+}
